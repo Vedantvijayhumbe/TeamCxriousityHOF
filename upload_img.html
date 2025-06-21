@@ -146,12 +146,12 @@
                 document.querySelector('.upload-section').style.display = 'none';
                 document.getElementById('loading').style.display = 'block';
                 
-                // Simulate analysis delay
+                
                 setTimeout(() => {
                     document.getElementById('loading').style.display = 'none';
                     document.getElementById('result-section').style.display = 'block';
                     
-                    // Generate fake report data
+                    
                     const statuses = ['Tuberculosis Detected', 'No Tuberculosis Detected'];
                     const randomStatus = statuses[Math.floor(Math.random() * statuses.length)];
                     const randomConfidence = Math.floor(Math.random() * 30 + 70) + '% Probability';
